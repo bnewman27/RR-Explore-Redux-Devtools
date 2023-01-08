@@ -15,19 +15,19 @@ function Counter() {
     return (
         <div>
             <h1>{count}</h1>
-            <button
+            <button class="Increment"
                 aria-label="Increment value"
                 onClick={() => dispatch(increment())}>
                 Increment
             </button>
-            <button
+            <button class="Decrement"
                 aria-label="Decrement value"
                 onClick={() => dispatch(decrement())}>
                 Decrement
             </button>
             <form onSubmit={(e) => byAmount(e)}>
-                <input type="number" onChange={(e) => setInput(e.target.value)} />
-                <button type="submit">Submit</button>
+                <input type="word" onChange={(e) => setInput(e.target.value)} />
+                <button class="submit" type="submit">Submit</button>
             </form>
         </div>
     )
