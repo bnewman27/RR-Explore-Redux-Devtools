@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.Increment {
+  background-color: lightslategray;
+}
+
+.Decrement {
+  background-color: lightslategray;
+}
+
+/* .button {
+  background-color: lightslategray;
+} */
+
+.input {
+  background-color: lightslategray;
+}
