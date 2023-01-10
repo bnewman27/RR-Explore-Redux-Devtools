@@ -1,0 +1,81 @@
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    font-style: italic;
+  }
+  
+  .buttonMenu {
+    align-items: center;
+  }
+  
+  .btn {
+    background: #ff6666;
+    border: 2px solid;
+    border-bottom-width: 4px; 
+    letter-spacing: inherit;
+    margin: 1em;
+    padding: 1em 2em;
+    text-transform: inherit;
+    transition: color 1s;
+    -webkit-text-fill-color: darkslategrey;
+    
+  }
+  
+  .button1 {
+    $color1: #ff6666;
+    $color2: #f8e16c;
+    $color3: darkslategrey;
+    color: $color3;
+    
+    
+    animation: zigzag 1s linear infinite;
+      background: linear-gradient(135deg, rgba($color2,0.25) 0.25em, transparent 0.25em) -0.5em 0
+                , linear-gradient(225deg, rgba($color2,0.25) 0.25em, transparent 0.25em) -0.5em 0
+                , linear-gradient(315deg, rgba($color2,0.25) 0.25em, transparent 0.25em) 0 0
+                , linear-gradient(45deg, rgba($color2,0.25) 0.25em, transparent 0.25em) 0 0;
+      background-size: 0.75em 0.75em;
+      
+      &:hover {
+        color: adjust-hue($color2,180);
+        animation: zigzag 1s linear infinite;
+        background: linear-gradient(135deg, rgba($color1,0.25) 0.25em, transparent 0.25em) -0.5em 0
+                , linear-gradient(225deg, rgba($color1,0.25) 0.25em, transparent 0.25em) -0.5em 0
+                , linear-gradient(315deg, rgba($color1,0.25) 0.25em, transparent 0.25em) 0 0
+                , linear-gradient(45deg, rgba($color1,0.25) 0.25em, transparent 0.25em) 0 0;
+                background-size: 0.75em 0.75em;
+      }
+  }
+  
+  
+  
+  .button2 {
+    
+    $color1: #ff6666;
+    $color2: #f8e16c;
+    $color3: darkslategrey;
+    color: $color3;
+    
+    
+      animation: zigzag 1s linear infinite;
+      background: linear-gradient(135deg, rgba($color2,0.25) 0.25em, transparent 0.25em) -0.5em 0
+                , linear-gradient(225deg, rgba($color2,0.25) 0.25em, transparent 0.25em) -0.5em 0
+                , linear-gradient(315deg, rgba($color2,0.25) 0.25em, transparent 0.25em) 0 0
+                , linear-gradient(45deg, rgba($color2,0.25) 0.25em, transparent 0.25em) 0 0;
+      background-size: 0.75em 0.75em;
+      
+      &:hover {
+        color: adjust-hue($color2,180);
+        animation: zigzag 1s linear infinite;
+        background: linear-gradient(135deg, rgba($color1,0.25) 0.25em, transparent 0.25em) -0.5em 0
+                , linear-gradient(225deg, rgba($color1,0.25) 0.25em, transparent 0.25em) -0.5em 0
+                , linear-gradient(315deg, rgba($color1,0.25) 0.25em, transparent 0.25em) 0 0
+                , linear-gradient(45deg, rgba($color1,0.25) 0.25em, transparent 0.25em) 0 0;
+                background-size: 0.75em 0.75em;
+      }
+  }
+  
+  @keyframes zigzag {
+    100% {
+      background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0;
+    }
+  }
