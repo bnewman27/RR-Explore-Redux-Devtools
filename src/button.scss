@@ -25,14 +25,14 @@ h3 {
     $color1: #ff6666;
     $color2: #f8e16c;
     $color3: darkslategrey;
-    color: $color3;
+    color: adjust-hue($color3,180);
     
     
     animation: zigzag 1s linear infinite;
-      background: linear-gradient(135deg, rgba($color2,0.25) 0.25em, transparent 0.25em) -0.5em 0
-                , linear-gradient(225deg, rgba($color2,0.25) 0.25em, transparent 0.25em) -0.5em 0
-                , linear-gradient(315deg, rgba($color2,0.25) 0.25em, transparent 0.25em) 0 0
-                , linear-gradient(45deg, rgba($color2,0.25) 0.25em, transparent 0.25em) 0 0;
+      background: linear-gradient(135deg, rgba($color2,0.25) 0.25em, transparent 0.5em) -0.5em 0
+                , linear-gradient(225deg, rgba($color2,0.25) 0.25em, transparent 0.5em) -0.5em 0
+                , linear-gradient(315deg, rgba($color2,0.25) 0.25em, transparent 0.5em) 0 0
+                , linear-gradient(45deg, rgba($color2,0.25) 0.25em, transparent 0.5em) 0 0;
       background-size: 0.75em 0.75em;
       
       &:hover {
@@ -48,12 +48,12 @@ h3 {
   
   
   
-  .button2 {
+  .input {
     
     $color1: #ff6666;
     $color2: #f8e16c;
     $color3: darkslategrey;
-    color: $color3;
+    color: adjust-hue($color3,180);
     
     
       animation: zigzag 1s linear infinite;

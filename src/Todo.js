@@ -18,13 +18,13 @@ function Todo() {
     return (
         <div>
             <form onSubmit={(e) => submitForm(e)}>
-                <input class="button" type="text" onChange={(e) => setInput(e.target.value)} />
+                <input class="input" type="text" onChange={(e) => setInput(e.target.value)} />
                 <button className="button1" type="submit">Submit</button>
             </form>
             <ul>
                 {renderItems}
             </ul>
-            <button className="button2" onClick={() => dispatch(clearTodo())}>Clear</button>
+            <button className="button1" onClick={() => dispatch(clearTodo())}>Clear</button>
         </div>
     )
 }
